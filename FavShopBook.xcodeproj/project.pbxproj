@@ -10,6 +10,7 @@
 		EB1126DA191810EA005EC81E /* FavShopBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB1126D8191810EA005EC81E /* FavShopBook.xcdatamodeld */; };
 		EB1126DC1918140B005EC81E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1126DB1918140B005EC81E /* CoreData.framework */; };
 		EB1126DF191816BC005EC81E /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1126DE191816BC005EC81E /* Shop.m */; };
+		EBA6DF0F19230EFE00803A8B /* hoge in Resources */ = {isa = PBXBuildFile; fileRef = EBA6DF0E19230EFE00803A8B /* hoge */; };
 		EBA84979191400C400B40E4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA84978191400C400B40E4B /* Foundation.framework */; };
 		EBA8497B191400C400B40E4B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA8497A191400C400B40E4B /* CoreGraphics.framework */; };
 		EBA8497D191400C400B40E4B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA8497C191400C400B40E4B /* UIKit.framework */; };
@@ -44,6 +45,7 @@
 		EB1126DB1918140B005EC81E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		EB1126DD191816BC005EC81E /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
 		EB1126DE191816BC005EC81E /* Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
+		EBA6DF0E19230EFE00803A8B /* hoge */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hoge; sourceTree = "<group>"; };
 		EBA84975191400C400B40E4B /* FavShopBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavShopBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA84978191400C400B40E4B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EBA8497A191400C400B40E4B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -101,6 +103,7 @@
 				EB1126DD191816BC005EC81E /* Shop.h */,
 				EB1126DE191816BC005EC81E /* Shop.m */,
 				EB1126D8191810EA005EC81E /* FavShopBook.xcdatamodeld */,
+				EBA6DF0E19230EFE00803A8B /* hoge */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBA8498F191400C400B40E4B /* Main_iPad.storyboard in Resources */,
+				EBA6DF0F19230EFE00803A8B /* hoge in Resources */,
 				EBA84994191400C400B40E4B /* Images.xcassets in Resources */,
 				EBA8498C191400C400B40E4B /* Main_iPhone.storyboard in Resources */,
 				EBA84983191400C400B40E4B /* InfoPlist.strings in Resources */,

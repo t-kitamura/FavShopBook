@@ -77,7 +77,7 @@
 //    }
     
     // データの保持
-    _datas = [self.fetchedResultsController fetchedObjects];
+    _datas = [self findShopDatas];
 }
 
 - (NSFetchedResultsController *)fetchedResultsController
@@ -108,7 +108,11 @@
     NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
 //    aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
-    
+
+    return _fetchedResultsController;
+}
+
+- (NSArray *) findShopDatas {
     // データの検索
 	NSError *error = nil;
 	if (![self.fetchedResultsController performFetch:&error]) {
@@ -116,7 +120,7 @@
 	    abort();
 	}
     
-    return _fetchedResultsController;
+    return [self.fetchedResultsController fetchedObjects];
 }
 
 - (void)insertShopDatas {
@@ -281,14 +285,12 @@
     else if ([[segue identifier] isEqualToString:@"entryData"]) {
         NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
         Shop *shop = (Shop *)[NSEntityDescription insertNewObjectForEntityForName:@"Shop" inManagedObjectContext:context];
-        EditViewController *controller = [segue destinationViewController];
-        controller.delegate = self;
-        [controller setEditData:shop];
+        [[segue destinationViewController] setEditData:shop];
     }
 }
 
--(void)editViewBacked:(Shop *)shop
-{
+-(void)viewWillAppear:(BOOL)animated {
+    [self loadShopDatas];
     [shopTable reloadData];
 }
 

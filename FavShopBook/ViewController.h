@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-#import "EditViewController.h"
 
-@interface ViewController : UIViewController <NSFetchedResultsControllerDelegate, BackViewDelegate>
+@interface ViewController : UIViewController <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
